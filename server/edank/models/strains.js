@@ -1,7 +1,7 @@
 'use strict';
 
 var mongoose = require('mongoose'),
-    schema   = mongoose.Schema;
+    Schema   = mongoose.Schema;
 
 var StrainSchema = new Schema({
     "name": {
@@ -17,19 +17,19 @@ var StrainSchema = new Schema({
     },
 
     "thc_level": {
-        "type": double
+        "type": Number
     },
 
     "cbd_level": {
-        "type": double
+        "type": Number
     },
 
     "treatments": {
-        "type": array
+        "type": Array
     },
 
     "flavors": {
-        "type": array
+        "type": Array
     },
 
     "in_season": {
